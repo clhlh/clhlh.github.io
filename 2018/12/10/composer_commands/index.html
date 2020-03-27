@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="javascript,ajax,php,thinkphp,">
+  <meta name="keywords" content="commands,composer,">
 
 
 
@@ -82,18 +82,18 @@
 
 
 
-<meta name="description" content="jquery发送ajax请求jquery会在请求头加一个 X-Requested-With 信息，信息内容为XMLHttpRequestphp可以使用$_SERVER这个全局数组来判别是否为ajax请求 123456// php判断是否为ajax请求if (isset($_SERVER[&quot;HTTP_X_REQUESTED_WITH&quot;] &amp;amp;&amp;amp; strtolower($_SERVER[">
-<meta name="keywords" content="javascript,ajax,php,thinkphp">
+<meta name="description" content="init12$ php composer.phar init$ composer init 初始化composer.json文件 运行后，它会以交互方式要求填写一些信息，一部分信息使用默认值    选项 含义     –name 包的名称   –description 包的描述   –author 包的作者   –homepage 包的主页   –require 需要依赖的其他包，必须要有一个版本">
+<meta name="keywords" content="commands,composer">
 <meta property="og:type" content="article">
-<meta property="og:title" content="server判断是否为ajax请求">
-<meta property="og:url" content="https://clhlh.github.io/2018/12/09/判断是否为ajax提交/index.html">
+<meta property="og:title" content="Composer Commands">
+<meta property="og:url" content="https://clhlh.github.io/2018/12/10/composer_commands/index.html">
 <meta property="og:site_name" content="Clh">
-<meta property="og:description" content="jquery发送ajax请求jquery会在请求头加一个 X-Requested-With 信息，信息内容为XMLHttpRequestphp可以使用$_SERVER这个全局数组来判别是否为ajax请求 123456// php判断是否为ajax请求if (isset($_SERVER[&quot;HTTP_X_REQUESTED_WITH&quot;] &amp;amp;&amp;amp; strtolower($_SERVER[">
+<meta property="og:description" content="init12$ php composer.phar init$ composer init 初始化composer.json文件 运行后，它会以交互方式要求填写一些信息，一部分信息使用默认值    选项 含义     –name 包的名称   –description 包的描述   –author 包的作者   –homepage 包的主页   –require 需要依赖的其他包，必须要有一个版本">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-27T15:19:45.683Z">
+<meta property="og:updated_time" content="2018-12-10T09:10:14.439Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="server判断是否为ajax请求">
-<meta name="twitter:description" content="jquery发送ajax请求jquery会在请求头加一个 X-Requested-With 信息，信息内容为XMLHttpRequestphp可以使用$_SERVER这个全局数组来判别是否为ajax请求 123456// php判断是否为ajax请求if (isset($_SERVER[&quot;HTTP_X_REQUESTED_WITH&quot;] &amp;amp;&amp;amp; strtolower($_SERVER[">
+<meta name="twitter:title" content="Composer Commands">
+<meta name="twitter:description" content="init12$ php composer.phar init$ composer init 初始化composer.json文件 运行后，它会以交互方式要求填写一些信息，一部分信息使用默认值    选项 含义     –name 包的名称   –description 包的描述   –author 包的作者   –homepage 包的主页   –require 需要依赖的其他包，必须要有一个版本">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://clhlh.github.io/2018/12/09/判断是否为ajax提交/">
+  <link rel="canonical" href="https://clhlh.github.io/2018/12/10/composer_commands/">
 
 
 
 
 
-  <title>server判断是否为ajax请求 | Clh</title>
+  <title>Composer Commands | Clh</title>
   
 
 
@@ -257,7 +257,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://clhlh.github.io/2018/12/09/判断是否为ajax提交/">
+    <link itemprop="mainEntityOfPage" href="https://clhlh.github.io/2018/12/10/composer_commands/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Clh">
@@ -274,7 +274,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">server判断是否为ajax请求</h2>
+          <h2 class="post-title" itemprop="name headline">Composer Commands</h2>
         
 
         <div class="post-meta">
@@ -286,8 +286,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-09T01:05:06+08:00">
-                2018-12-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-10T15:35:06+08:00">
+                2018-12-10
               </time>
             
 
@@ -309,8 +309,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/前端/" itemprop="url" rel="index">
-                    <span itemprop="name">前端</span>
+                  <a href="/categories/tool/" itemprop="url" rel="index">
+                    <span itemprop="name">tool</span>
                   </a>
                 </span>
 
@@ -346,14 +346,79 @@
       
 
       
-        <h3 id="jquery发送ajax请求"><a href="#jquery发送ajax请求" class="headerlink" title="jquery发送ajax请求"></a>jquery发送ajax请求</h3><p>jquery会在请求头加一个 X-Requested-With 信息，信息内容为XMLHttpRequest<br>php可以使用$_SERVER这个全局数组来判别是否为ajax请求</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// php判断是否为ajax请求</span></span><br><span class="line"><span class="keyword">if</span> (<span class="keyword">isset</span>($_SERVER[<span class="string">"HTTP_X_REQUESTED_WITH"</span>] &amp;&amp; strtolower($_SERVER[<span class="string">"HTTP_X_REQUESTED_WITH"</span>] == <span class="string">'xmlhttprequest'</span>))&#123;</span><br><span class="line">    <span class="comment">// 是ajax请求</span></span><br><span class="line">&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    <span class="comment">// 非ajax请求</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-<p>这里令我想到了TP里面了一个判断是ajax请求的常量IS_AJAX，好奇心驱使看一下这个常量是怎么定义的<br>在ThinkPHP(3.2.2)中在ThinkPHP/Library/Think/APP.class.php(Line：49)</p>
-<figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">define(<span class="string">'IS_AJAX'</span>, ((<span class="keyword">isset</span>($_SERVER[<span class="string">'HTTP_X_REQUESTED_WITH'</span>]) &amp;&amp; strtolower($_SERVER[<span class="string">'HTTP_X_REQUESTED_WITH'</span>]) == <span class="string">'xmlhttprequest'</span>) || !emtpty($_POST(C(<span class="string">'VAR_AJAX_SUBMIT'</span>)] || !<span class="keyword">empty</span>($_GET[C(<span class="string">'VAR_AJAX_SUBMIT'</span>)])) ? <span class="keyword">true</span> : <span class="keyword">false</span>);</span><br></pre></td></tr></table></figure>
-<p>可见ThinkPHP同理判断ajax请求</p>
-<h3 id="原生js发起ajax请求"><a href="#原生js发起ajax请求" class="headerlink" title="原生js发起ajax请求"></a>原生js发起ajax请求</h3><p>需要自己添加请求头信息，这样才可以在后台进行判断 前台添加请求头代码</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> xmlhttp = <span class="keyword">new</span> XMLHttpRequest();</span><br><span class="line">xmlhttp.open(<span class="string">"GET"</span>, <span class="string">"test.php"</span>, <span class="literal">true</span>);</span><br><span class="line">xmlhttp.setRequestHeader(<span class="string">"X-Requested-With"</span>, <span class="string">"XMLHttpRequest"</span>);</span><br><span class="line">xmlhttp.send();</span><br></pre></td></tr></table></figure>
+        <h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar init</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> composer init</span></span><br></pre></td></tr></table></figure>
+<p>初始化composer.json文件</p>
+<p>运行后，它会以交互方式要求填写一些信息，一部分信息使用默认值</p>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>–name</td>
+<td>包的名称</td>
+</tr>
+<tr>
+<td>–description</td>
+<td>包的描述</td>
+</tr>
+<tr>
+<td>–author</td>
+<td>包的作者</td>
+</tr>
+<tr>
+<td>–homepage</td>
+<td>包的主页</td>
+</tr>
+<tr>
+<td>–require</td>
+<td>需要依赖的其他包，必须要有一个版本约束</td>
+</tr>
+<tr>
+<td>–require-dev</td>
+<td>开发版的依赖包，遵循foo/bar:1.0.0这样的格式</td>
+</tr>
+<tr>
+<td>–stability(-s)</td>
+<td>minimum-stability字段的值</td>
+</tr>
+</tbody>
+</table>
+<h3 id="install"><a href="#install" class="headerlink" title="install"></a>install</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar install</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> composer install</span></span><br></pre></td></tr></table></figure>
+<p>从当前目录读取composer.json文件，处理依赖关系，将其安装至vendor目录下</p>
+<p>如果当前目录下存在composer.lock文件，则从此文件读取依赖版本<br>确保该库的每个使用者都能得到相同的依赖版本</p>
+<h3 id="update"><a href="#update" class="headerlink" title="update"></a>update</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar update</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> composer update</span></span><br></pre></td></tr></table></figure>
+<p>获取依赖的最新版本，并且升级composer.lock文件</p>
+<h3 id="require"><a href="#require" class="headerlink" title="require"></a>require</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar require</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> composer require</span></span><br><span class="line"></span><br><span class="line">// 路过交互直接指定依赖包</span><br><span class="line"><span class="meta">$</span><span class="bash"> composer require vendor/package:2.* vendoer/package2:dev-master</span></span><br></pre></td></tr></table></figure>
+<p>增加新的依赖包到当前目录的composer.json文件中</p>
+<p>在添加或改变依赖时，修改后的依赖关系将被安装或更新</p>
+<h3 id="global"><a href="#global" class="headerlink" title="global"></a>global</h3><p>配合install、require、update命令使用</p>
+<p>将$CMOPOSER_HOME/vendor/bin加入到$PATH环境变量中</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar global require fabpot/php-cs-fixer:dev-master</span></span><br><span class="line"></span><br><span class="line">// 如果想更新它</span><br><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar global update</span></span><br></pre></td></tr></table></figure>
+<h3 id="search"><a href="#search" class="headerlink" title="search"></a>search</h3><p>搜索packagist.org上的包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar search monolog</span></span><br></pre></td></tr></table></figure>
+<p>可以传递多个参数进行多条件搜索</p>
+<h3 id="show"><a href="#show" class="headerlink" title="show"></a>show</h3><p>列出所有可用的软件包</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> php composer.phar show</span></span><br><span class="line"></span><br><span class="line">// 查看一个包的详细信息</span><br><span class="line"><span class="meta">$</span><span class="bash">php composer.phar show monolog/monolog [版本号]</span></span><br></pre></td></tr></table></figure>
+<h3 id="depends"><a href="#depends" class="headerlink" title="depends"></a>depends</h3><p>检查项目中的某个包是否被其他包依赖，并列出它们</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer depends --link-type=require monolog/monolog</span></span><br></pre></td></tr></table></figure>
+<h3 id="validate"><a href="#validate" class="headerlink" title="validate"></a>validate</h3><p>检测composer.json是否有效</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer validate</span></span><br></pre></td></tr></table></figure>
+<p>在composer.json文件提交前和创建tag前，应该运行该命令</p>
+<h3 id="status"><a href="#status" class="headerlink" title="status"></a>status</h3><p>检查本地依赖包中的代码是否改动</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer status</span></span><br></pre></td></tr></table></figure>
+<h3 id="self-update"><a href="#self-update" class="headerlink" title="self-update"></a>self-update</h3><p>升级composer自身</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer self-update</span></span><br><span class="line"></span><br><span class="line">// 升级到特定版本</span><br><span class="line"><span class="meta">$</span><span class="bash"> composer self-update 1.0.0-alpha7</span></span><br></pre></td></tr></table></figure>
+<h3 id="config"><a href="#config" class="headerlink" title="config"></a>config</h3><p>编辑composer的一些基本设置</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer config --list</span></span><br><span class="line"></span><br><span class="line">// 修改包来源地址</span><br><span class="line"><span class="meta">$</span><span class="bash"> composer config repositories.foo vcx http://github.com/foo/bar</span></span><br></pre></td></tr></table></figure>
+<h3 id="create-project"><a href="#create-project" class="headerlink" title="create-project"></a>create-project</h3><p>从现在的包中创建一个新项目，相当于git clone</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> composer create-project doctrine/orm path 2.2.*</span></span><br></pre></td></tr></table></figure>
+<p>通过composer.json文件同样可以载入这个项目</p>
+<h3 id="dump-autoload"><a href="#dump-autoload" class="headerlink" title="dump-autoload"></a>dump-autoload</h3><p>如果载入包中加入一个新的类，可以使用dump-autoload来完成，而不必执行install或update</p>
+<p>1</p>
 
       
     </div>
@@ -371,13 +436,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/javascript/" rel="tag"><i class="fa fa-tag"></i> javascript</a>
+            <a href="/tags/commands/" rel="tag"><i class="fa fa-tag"></i> commands</a>
           
-            <a href="/tags/ajax/" rel="tag"><i class="fa fa-tag"></i> ajax</a>
-          
-            <a href="/tags/php/" rel="tag"><i class="fa fa-tag"></i> php</a>
-          
-            <a href="/tags/thinkphp/" rel="tag"><i class="fa fa-tag"></i> thinkphp</a>
+            <a href="/tags/composer/" rel="tag"><i class="fa fa-tag"></i> composer</a>
           
         </div>
       
@@ -390,8 +451,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/12/08/JS验证身份证号码/" rel="next" title="js完美验证身份证号码">
-                <i class="fa fa-chevron-left"></i> js完美验证身份证号码
+              <a href="/2018/12/10/hexo_commands/" rel="next" title="Hexo Commands">
+                <i class="fa fa-chevron-left"></i> Hexo Commands
               </a>
             
           </div>
@@ -400,8 +461,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/12/10/hexo_commands/" rel="prev" title="Hexo Commands">
-                Hexo Commands <i class="fa fa-chevron-right"></i>
+              <a href="/2018/12/29/npm/" rel="prev" title="">
+                 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -554,7 +615,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#jquery发送ajax请求"><span class="nav-number">1.</span> <span class="nav-text">jquery发送ajax请求</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原生js发起ajax请求"><span class="nav-number">2.</span> <span class="nav-text">原生js发起ajax请求</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#init"><span class="nav-number">1.</span> <span class="nav-text">init</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#install"><span class="nav-number">2.</span> <span class="nav-text">install</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#update"><span class="nav-number">3.</span> <span class="nav-text">update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#require"><span class="nav-number">4.</span> <span class="nav-text">require</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#global"><span class="nav-number">5.</span> <span class="nav-text">global</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#search"><span class="nav-number">6.</span> <span class="nav-text">search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#show"><span class="nav-number">7.</span> <span class="nav-text">show</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#depends"><span class="nav-number">8.</span> <span class="nav-text">depends</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#validate"><span class="nav-number">9.</span> <span class="nav-text">validate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#status"><span class="nav-number">10.</span> <span class="nav-text">status</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#self-update"><span class="nav-number">11.</span> <span class="nav-text">self-update</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#config"><span class="nav-number">12.</span> <span class="nav-text">config</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#create-project"><span class="nav-number">13.</span> <span class="nav-text">create-project</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#dump-autoload"><span class="nav-number">14.</span> <span class="nav-text">dump-autoload</span></a></li></ol></div>
             
 
           </div>
