@@ -71,7 +71,7 @@
 
 
 
-  <meta name="keywords" content="hexo,commands,">
+  <meta name="keywords" content="技术栈,">
 
 
 
@@ -82,18 +82,18 @@
 
 
 
-<meta name="description" content="init1$ hexo init [folder] 在指定文件夹新建网站 new1$ hexo new [layout] &amp;lt;title&amp;gt; 使用layout模版新建一篇文章，layout默认为_config.yml中的default_layout">
-<meta name="keywords" content="hexo,commands">
+<meta name="description" content="paramADDR-l listen on address (default is 0.0.0.0) PORT-p listen on port (default is 11300) DIR-b wal directory -n do not compact the binlog 不压缩binlog -c compact the binlog (default) 压缩binlog">
+<meta name="keywords" content="技术栈">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Commands">
-<meta property="og:url" content="https://clhlh.github.io/hexo_commands/index.html">
+<meta property="og:title" content="Beanstalk使用方法">
+<meta property="og:url" content="https://clhlh.github.io/Beanstalkd/index.html">
 <meta property="og:site_name" content="Clh&#39;s blogs">
-<meta property="og:description" content="init1$ hexo init [folder] 在指定文件夹新建网站 new1$ hexo new [layout] &amp;lt;title&amp;gt; 使用layout模版新建一篇文章，layout默认为_config.yml中的default_layout">
+<meta property="og:description" content="paramADDR-l listen on address (default is 0.0.0.0) PORT-p listen on port (default is 11300) DIR-b wal directory -n do not compact the binlog 不压缩binlog -c compact the binlog (default) 压缩binlog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2020-03-28T05:34:16.489Z">
+<meta property="og:updated_time" content="2020-03-28T05:46:33.456Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo Commands">
-<meta name="twitter:description" content="init1$ hexo init [folder] 在指定文件夹新建网站 new1$ hexo new [layout] &amp;lt;title&amp;gt; 使用layout模版新建一篇文章，layout默认为_config.yml中的default_layout">
+<meta name="twitter:title" content="Beanstalk使用方法">
+<meta name="twitter:description" content="paramADDR-l listen on address (default is 0.0.0.0) PORT-p listen on port (default is 11300) DIR-b wal directory -n do not compact the binlog 不压缩binlog -c compact the binlog (default) 压缩binlog">
 
 
 
@@ -123,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="https://clhlh.github.io/hexo_commands/">
+  <link rel="canonical" href="https://clhlh.github.io/Beanstalkd/">
 
 
 
 
 
-  <title>Hexo Commands | Clh's blogs</title>
+  <title>Beanstalk使用方法 | Clh's blogs</title>
   
 
 
@@ -257,7 +257,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://clhlh.github.io/hexo_commands/">
+    <link itemprop="mainEntityOfPage" href="https://clhlh.github.io/Beanstalkd/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Clh">
@@ -274,7 +274,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Hexo Commands</h2>
+          <h2 class="post-title" itemprop="name headline">Beanstalk使用方法</h2>
         
 
         <div class="post-meta">
@@ -286,8 +286,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-12-10T09:35:06+08:00">
-                2018-12-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2020-03-28T13:05:06+08:00">
+                2020-03-28
               </time>
             
 
@@ -346,111 +346,56 @@
       
 
       
-        <h3 id="init"><a href="#init" class="headerlink" title="init"></a>init</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo init [folder]</span><br></pre></td></tr></table></figure>
-<p>在指定文件夹新建网站</p>
-<h3 id="new"><a href="#new" class="headerlink" title="new"></a>new</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo new [layout] &lt;title&gt;</span><br></pre></td></tr></table></figure>
-<p>使用layout模版新建一篇文章，layout默认为_config.yml中的default_layout</p>
-<a id="more"></a>
-<h3 id="generate"><a href="#generate" class="headerlink" title="generate"></a>generate</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo generate</span><br><span class="line"><span class="meta">$</span> hexo g</span><br></pre></td></tr></table></figure>
-<p>生成静态文件</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-d, –deploy</td>
-<td>文件生成后立即部署网站</td>
-</tr>
-<tr>
-<td>-w, –watch</td>
-<td>监视文件变动</td>
-</tr>
-</tbody>
-</table>
-<h3 id="publish"><a href="#publish" class="headerlink" title="publish"></a>publish</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo publish [layout] &lt;filename&gt;</span><br></pre></td></tr></table></figure>
-<p>发表草稿</p>
-<h3 id="server"><a href="#server" class="headerlink" title="server"></a>server</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo server</span><br></pre></td></tr></table></figure>
-<p>启动服务器，默认网址: <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a></p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-p, –port</td>
-<td>重设端口</td>
-</tr>
-<tr>
-<td>-s, –static</td>
-<td>只使用静态文件</td>
-</tr>
-<tr>
-<td>-l, –log</td>
-<td>启动日志记录，使用覆盖记录格式</td>
-</tr>
-</tbody>
-</table>
-<h3 id="deploy"><a href="#deploy" class="headerlink" title="deploy"></a>deploy</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo deploy</span><br><span class="line"><span class="meta">$</span> hexo d</span><br></pre></td></tr></table></figure>
-<p>部署网站</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-p, –port</td>
-<td>重设端口</td>
-</tr>
-</tbody>
-</table>
-<h3 id="render"><a href="#render" class="headerlink" title="render"></a>render</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo render &lt;file1&gt; [file2] ...</span><br></pre></td></tr></table></figure>
-<p>渲染文件</p>
-<table>
-<thead>
-<tr>
-<th>选项</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>-o, –output</td>
-<td>设置输出路径</td>
-</tr>
-</tbody>
-</table>
-<h3 id="migrate"><a href="#migrate" class="headerlink" title="migrate"></a>migrate</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo migrage &lt;type&gt;</span><br></pre></td></tr></table></figure>
-<p>从其他博客系统迁移内容</p>
-<h3 id="clean"><a href="#clean" class="headerlink" title="clean"></a>clean</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo clean</span><br></pre></td></tr></table></figure>
-<p>清除缓存文件(db.json)和已生成的静态文件(public)</p>
-<p>在某些情况(尤其是更换主题后)，发现对站点的更改不生效，可能需要运行该命令</p>
-<h3 id="list"><a href="#list" class="headerlink" title="list"></a>list</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo list &lt;type&gt;</span><br></pre></td></tr></table></figure>
-<p>列表网站资料</p>
-<h3 id="version"><a href="#version" class="headerlink" title="version"></a>version</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo version</span><br></pre></td></tr></table></figure>
-<p>查看hexo版本</p>
-<h3 id="安全模式"><a href="#安全模式" class="headerlink" title="安全模式"></a>安全模式</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo --safe</span><br></pre></td></tr></table></figure>
-<p>以安全模式下，不会载入插件和脚本</p>
-<p>当安装新插件遭遇问题时，可以尝试以安全模式重新执行</p>
-<h3 id="调试模式"><a href="#调试模式" class="headerlink" title="调试模式"></a>调试模式</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo --debug</span><br></pre></td></tr></table></figure>
-<p>在终端中显示调试信息并记录到debug.log</p>
-<h3 id="简洁模式"><a href="#简洁模式" class="headerlink" title="简洁模式"></a>简洁模式</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo --silent</span><br></pre></td></tr></table></figure>
-<p>隐藏终端信息</p>
-<h3 id="自定义配置文件的路径"><a href="#自定义配置文件的路径" class="headerlink" title="自定义配置文件的路径"></a>自定义配置文件的路径</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo --config custom.yml</span><br></pre></td></tr></table></figure>
-<p>自定义配置文件的路径，执行后将不再使用_config.yml</p>
-<h3 id="显示草稿"><a href="#显示草稿" class="headerlink" title="显示草稿"></a>显示草稿</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo --draft</span><br></pre></td></tr></table></figure>
-<p>显示source/_drafts文件夹中的草稿文章</p>
-<h3 id="自定义CWD"><a href="#自定义CWD" class="headerlink" title="自定义CWD"></a>自定义CWD</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> hexo --cwd /path/to/cwd</span><br></pre></td></tr></table></figure>
-<p>自定义当前工作目录(Current working directory)的路径</p>
+        <h3 id="param"><a href="#param" class="headerlink" title="param"></a>param</h3><h5 id="ADDR"><a href="#ADDR" class="headerlink" title="ADDR"></a>ADDR</h5><pre><code>-l listen on address (default is 0.0.0.0)
+</code></pre><h5 id="PORT"><a href="#PORT" class="headerlink" title="PORT"></a>PORT</h5><pre><code>-p listen on port (default is 11300)
+</code></pre><h5 id="DIR"><a href="#DIR" class="headerlink" title="DIR"></a>DIR</h5><pre><code>-b wal directory
+-n do not compact the binlog 不压缩binlog
+-c compact the binlog (default) 压缩binlog
+</code></pre><a id="more"></a>
+<h5 id="BYTES"><a href="#BYTES" class="headerlink" title="BYTES"></a>BYTES</h5><pre><code>-z set the maximun job size in bytes (default is 65535)
+-s set the size of each wal file (default is 1058576)
+   (will be rounded up to a multiple of 512 bytes)
+</code></pre><h5 id="Version"><a href="#Version" class="headerlink" title="Version"></a>Version</h5><pre><code>-v show version information
+</code></pre><h5 id="MS"><a href="#MS" class="headerlink" title="MS"></a>MS</h5><pre><code>-f fsync at most once every MS milliseconds (use -f0 for &quot;always fsync&quot;)
+同步最快毫秒级(使用&quot;-f0&quot;表示表明总是同步)
+
+-F never fsync (default)
+</code></pre><h5 id="USER"><a href="#USER" class="headerlink" title="USER"></a>USER</h5><pre><code>-u become user and group
+</code></pre><h5 id="INFO"><a href="#INFO" class="headerlink" title="INFO"></a>INFO</h5><pre><code>-V increase verbosity 展示扩展信息
+</code></pre><h3 id="pda-pheanstalkd"><a href="#pda-pheanstalkd" class="headerlink" title="pda/pheanstalkd"></a>pda/pheanstalkd</h3><h4 id="维护方法"><a href="#维护方法" class="headerlink" title="维护方法"></a>维护方法</h4><ul>
+<li>statsJob 提供有关指定作业的统计信息</li>
+<li>statsTube 提供有关指定管道的统计信息</li>
+<li>stats 给出整个beanstalkd系统的统计信息</li>
+<li>listTubes 程序中所有的tube列表</li>
+<li>listTubesWatched 查看所有监视中的tube列表</li>
+<li>listTubeUsed 查看当前使用中管道的名称</li>
+<li>peek 检查系统中的作业，不管它在什么管道中</li>
+<li>useTube 使用指定管道</li>
+</ul>
+<h4 id="生产者方法"><a href="#生产者方法" class="headerlink" title="生产者方法"></a>生产者方法</h4><ul>
+<li><p>put 推一个工作进管道中 配合useTube使用<br>  data<br>  priority 任务优先级 0 ~ 0xFFFFFFF<br>  delay 延时时间<br>  ttr 超时重发时间</p>
+<p>  return job ID</p>
+</li>
+<li>putInTube 将作业推进一个指定的管道中</li>
+</ul>
+<h4 id="消费者方法"><a href="#消费者方法" class="headerlink" title="消费者方法"></a>消费者方法</h4><ul>
+<li>watch 将指定的管道添加到watchlist，以从其中保留作业</li>
+<li>watchOnly 将指定的管道添加到watchlist中，以从watchlist中保留作业，并忽略监视列表中剩余的其他任何管道</li>
+<li>ignore 删除一个监视中的管道</li>
+<li>reserve 以阻塞的方式监听管道</li>
+<li>reserveFromTube 在指定管道中保留/锁定准备好的工作</li>
+<li>release 将任务重新放回管道</li>
+<li>bury 将任务隐藏</li>
+<li>peekBuried 读取当前管道中的隐藏任务</li>
+<li>kickJob 把buried状态的任务设置成ready</li>
+<li>kick 批量把buried状态的任务设置成ready</li>
+<li>peekReady 读取准备好的任务</li>
+<li>peekDelayed 读取延时任务</li>
+<li>pauseTube 给管道设置延迟</li>
+<li>resumeTube 将延迟管道恢复</li>
+<li>touch 允许进程消耗更多的时间</li>
+<li>delete 永久删除作业</li>
+</ul>
 
       
     </div>
@@ -468,9 +413,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
-            <a href="/tags/commands/" rel="tag"><i class="fa fa-tag"></i> commands</a>
+            <a href="/tags/技术栈/" rel="tag"><i class="fa fa-tag"></i> 技术栈</a>
           
         </div>
       
@@ -483,8 +426,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Is_ajax_submit/" rel="next" title="server判断是否为ajax请求">
-                <i class="fa fa-chevron-left"></i> server判断是否为ajax请求
+              <a href="/parenthesis_closure/" rel="next" title="括号闭合问题">
+                <i class="fa fa-chevron-left"></i> 括号闭合问题
               </a>
             
           </div>
@@ -493,8 +436,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/composer_commands/" rel="prev" title="Composer Commands">
-                Composer Commands <i class="fa fa-chevron-right"></i>
+              <a href="/linux_backstage_process/" rel="prev" title="linux后台进程">
+                linux后台进程 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -647,7 +590,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#init"><span class="nav-number">1.</span> <span class="nav-text">init</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new"><span class="nav-number">2.</span> <span class="nav-text">new</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#generate"><span class="nav-number">3.</span> <span class="nav-text">generate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#publish"><span class="nav-number">4.</span> <span class="nav-text">publish</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#server"><span class="nav-number">5.</span> <span class="nav-text">server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#deploy"><span class="nav-number">6.</span> <span class="nav-text">deploy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#render"><span class="nav-number">7.</span> <span class="nav-text">render</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#migrate"><span class="nav-number">8.</span> <span class="nav-text">migrate</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#clean"><span class="nav-number">9.</span> <span class="nav-text">clean</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#list"><span class="nav-number">10.</span> <span class="nav-text">list</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#version"><span class="nav-number">11.</span> <span class="nav-text">version</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安全模式"><span class="nav-number">12.</span> <span class="nav-text">安全模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#调试模式"><span class="nav-number">13.</span> <span class="nav-text">调试模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#简洁模式"><span class="nav-number">14.</span> <span class="nav-text">简洁模式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义配置文件的路径"><span class="nav-number">15.</span> <span class="nav-text">自定义配置文件的路径</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#显示草稿"><span class="nav-number">16.</span> <span class="nav-text">显示草稿</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义CWD"><span class="nav-number">17.</span> <span class="nav-text">自定义CWD</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#param"><span class="nav-number">1.</span> <span class="nav-text">param</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#ADDR"><span class="nav-number">1.0.1.</span> <span class="nav-text">ADDR</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#PORT"><span class="nav-number">1.0.2.</span> <span class="nav-text">PORT</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#DIR"><span class="nav-number">1.0.3.</span> <span class="nav-text">DIR</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#BYTES"><span class="nav-number">1.0.4.</span> <span class="nav-text">BYTES</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Version"><span class="nav-number">1.0.5.</span> <span class="nav-text">Version</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MS"><span class="nav-number">1.0.6.</span> <span class="nav-text">MS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#USER"><span class="nav-number">1.0.7.</span> <span class="nav-text">USER</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#INFO"><span class="nav-number">1.0.8.</span> <span class="nav-text">INFO</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#pda-pheanstalkd"><span class="nav-number">2.</span> <span class="nav-text">pda/pheanstalkd</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#维护方法"><span class="nav-number">2.1.</span> <span class="nav-text">维护方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#生产者方法"><span class="nav-number">2.2.</span> <span class="nav-text">生产者方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#消费者方法"><span class="nav-number">2.3.</span> <span class="nav-text">消费者方法</span></a></li></ol></li></div>
             
 
           </div>
